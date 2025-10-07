@@ -663,65 +663,89 @@
                     Rejoignez les milliers d'entrepreneurs algériens qui ont déjà changé leur destin
                 </p>
 
-                <div class="bg-white rounded-lg shadow-lg p-8 text-text-primary max-w-2xl mx-auto">
-                    <form id="enrollment-form" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="firstName" class="block text-sm font-medium text-text-primary mb-2">
-                                    Prénom *
-                                </label>
-                                <input type="text" id="firstName" name="firstName" required class="form-input" placeholder="Votre prénom" />
-                            </div>
-                            <div>
-                                <label for="lastName" class="block text-sm font-medium text-text-primary mb-2">
-                                    Nom *
-                                </label>
-                                <input type="text" id="lastName" name="lastName" required class="form-input" placeholder="Votre nom" />
-                            </div>
-                        </div>
+<div class="bg-white rounded-lg shadow-lg p-8 text-text-primary max-w-2xl mx-auto">
+  <!-- ✅ ربط Formspree هنا -->
+  <form id="enrollment-form" action="https://formspree.io/f/mwprnoke" method="POST" class="space-y-6">
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <label for="firstName" class="block text-sm font-medium text-text-primary mb-2">
+          Prénom *
+        </label>
+        <input type="text" id="firstName" name="firstName" required class="form-input" placeholder="Votre prénom" />
+      </div>
+      <div>
+        <label for="lastName" class="block text-sm font-medium text-text-primary mb-2">
+          Nom *
+        </label>
+        <input type="text" id="lastName" name="lastName" required class="form-input" placeholder="Votre nom" />
+      </div>
+    </div>
 
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-text-primary mb-2">
-                                Email *
-                            </label>
-                            <input type="email" id="email" name="email" required class="form-input" placeholder="votre.email@exemple.com" />
-                        </div>
+    <div>
+      <label for="email" class="block text-sm font-medium text-text-primary mb-2">
+        Email *
+      </label>
+      <input type="email" id="email" name="email" required class="form-input" placeholder="votre.email@exemple.com" />
+    </div>
 
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-text-primary mb-2">
-                                Téléphone (WhatsApp) *
-                            </label>
-                            <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+213 XXX XXX XXX" />
-                        </div>
+    <div>
+      <label for="phone" class="block text-sm font-medium text-text-primary mb-2">
+        Téléphone (WhatsApp) *
+      </label>
+      <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+213 XXX XXX XXX" />
+    </div>
 
-                        <div>
-                            <label for="experience" class="block text-sm font-medium text-text-primary mb-2">
-                                Votre expérience en e-commerce
-                            </label>
-                            <select id="experience" name="experience" class="form-input">
-                                <option value="beginner">Débutant complet</option>
-                                <option value="some">Quelques connaissances</option>
-                                <option value="intermediate">Intermédiaire</option>
-                                <option value="advanced">Avancé</option>
-                            </select>
-                        </div>
+    <div>
+      <label for="experience" class="block text-sm font-medium text-text-primary mb-2">
+        Votre expérience en e-commerce
+      </label>
+      <select id="experience" name="experience" class="form-input">
+        <option value="beginner">Débutant complet</option>
+        <option value="some">Quelques connaissances</option>
+        <option value="intermediate">Intermédiaire</option>
+        <option value="advanced">Avancé</option>
+      </select>
+    </div>
 
-                        <div class="bg-success-50 border border-success-200 rounded-lg p-4">
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-success font-semibold">Garantie satisfait ou remboursé 30 jours</span>
-                            </div>
-                        </div>
+    <div class="bg-success-50 border border-success-200 rounded-lg p-4">
+      <div class="flex items-center">
+        <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        <span class="text-success font-semibold">Garantie satisfait ou remboursé 30 jours</span>
+      </div>
+    </div>
 
-                        <button type="submit" class="w-full bg-accent hover:bg-accent-600 text-white font-poppins font-semibold py-4 px-6 rounded-lg transition-all duration-300 text-lg">
-                            Confirmer Mon Inscription - 4000 DZD
-                            <svg class="w-5 h-5 ml-2 inline" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                        </button>
+    <button type="submit" class="w-full bg-accent hover:bg-accent-600 text-white font-poppins font-semibold py-4 px-6 rounded-lg transition-all duration-300 text-lg">
+      Confirmer Mon Inscription - 4000 DZD
+      <svg class="w-5 h-5 ml-2 inline" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </form>
+</div>
 
+<!-- ✅ سكربت تأكيد بعد الإرسال -->
+<script>
+document.getElementById('enrollment-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    alert('✅ تم إرسال التسجيل بنجاح! سنتواصل معك قريبًا.');
+    form.reset();
+  } else {
+    alert('❌ حدث خطأ أثناء الإرسال، حاول مرة أخرى.');
+  }
+});
+</script>
                         <p class="text-sm text-text-muted text-center">
                             🔒 Vos données sont protégées et ne seront jamais partagées
                         </p>
@@ -788,8 +812,8 @@
                 <div>
                     <h4 class="font-semibold mb-4">Contact</h4>
                     <div class="space-y-2 text-gray-400">
-                        <p>📧 support@elitezcourse.dz</p>
-                        <p>📱 +213 XXX XXX XXX</p>
+                        <p>📧 elitez@gmail.com</p>
+                        <p>📱 +213 558 24 26 20 </p>
                         <p>📍 Alger, Algérie</p>
                         <p>🕒 Support 24/7</p>
                     </div>
@@ -1180,4 +1204,5 @@
     </script>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
+
 </html>
